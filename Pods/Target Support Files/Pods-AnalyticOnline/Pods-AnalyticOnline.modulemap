@@ -1,0 +1,6 @@
+framework module Pods_AnalyticOnline {
+  umbrella header "Pods-AnalyticOnline-umbrella.h"
+
+  export *
+  module * { export * }
+}

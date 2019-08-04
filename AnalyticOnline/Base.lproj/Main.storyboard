@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnalyticOnline" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbs-Ut-f5Y">
+                                <rect key="frame" x="78" y="377" width="258" height="105"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="6VR-8P-Ufw" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="58" y="86" width="298" height="265"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93V-Hb-mfS">
+                                <rect key="frame" x="139" y="540" width="137" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="xqs-Y1-7u9"/>
+                                </constraints>
+                                <state key="normal" title="Get Online"/>
+                                <connections>
+                                    <action selector="onlineButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qrY-nS-TTK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6VR-8P-Ufw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="7mv-Fd-r6X"/>
+                            <constraint firstItem="6VR-8P-Ufw" firstAttribute="centerX" secondItem="wbs-Ut-f5Y" secondAttribute="centerX" id="95N-l0-3oJ"/>
+                            <constraint firstItem="wbs-Ut-f5Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="Xaa-Ha-tPg"/>
+                            <constraint firstItem="wbs-Ut-f5Y" firstAttribute="top" secondItem="6VR-8P-Ufw" secondAttribute="bottom" constant="26" id="bMY-No-aBg"/>
+                            <constraint firstItem="93V-Hb-mfS" firstAttribute="top" secondItem="wbs-Ut-f5Y" secondAttribute="bottom" constant="58" id="dEp-2H-vQ0"/>
+                            <constraint firstItem="93V-Hb-mfS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="fd7-3A-zpy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="93V-Hb-mfS" secondAttribute="bottom" constant="263" id="iZt-3O-wIn"/>
+                            <constraint firstItem="wbs-Ut-f5Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="333" id="lxl-Oj-oTo"/>
+                            <constraint firstItem="6VR-8P-Ufw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mJl-Ss-AKe"/>
+                            <constraint firstAttribute="bottom" secondItem="6VR-8P-Ufw" secondAttribute="bottom" constant="545" id="qRc-5h-Qpa"/>
+                            <constraint firstItem="6VR-8P-Ufw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="tpe-xZ-dhp"/>
+                            <constraint firstItem="6VR-8P-Ufw" firstAttribute="centerX" secondItem="93V-Hb-mfS" secondAttribute="centerX" id="xcx-Z6-CSn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationLottie" destination="6VR-8P-Ufw" id="OcU-kj-X1q"/>
+                        <outlet property="onlineTextView" destination="wbs-Ut-f5Y" id="Syd-bx-xnc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
